@@ -1,0 +1,7 @@
+Uploading to pages repo using git cli inside /out folder.
+
+Claude Chat:
+https://claude.ai/chat/46d06137-776c-43cf-9e37-0b3d5fea0d87
+
+How-to Blog:
+https://superflux.dev/blog/github-pages-using-nextjs
