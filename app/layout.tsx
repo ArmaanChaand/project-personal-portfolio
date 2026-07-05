@@ -4,6 +4,7 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils";
 import Header from "@/components/header";
+import { Metadata } from "next";
 
 const robotoSlab = Roboto_Slab({ subsets: ['latin'], variable: '--font-serif' });
 
@@ -16,6 +17,31 @@ const fontMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
 })
+
+export const metadata: Metadata = {
+	metadataBase: new URL("https://armaanchaand.github.io"),
+	robots: {
+		index: true,
+		follow: true,
+		nocache: false,
+		"max-snippet": -1,
+		"max-image-preview": "large",
+		"max-video-preview": -1,
+		googleBot: {
+			index: true,
+			follow: true,
+			noimageindex: false,
+			"max-snippet": -1,
+			"max-image-preview": "large",
+			"max-video-preview": -1,
+		},
+	},
+	twitter: {
+		creator: "@devredbox",
+		site: "@devredbox",
+	},
+	// icons are added via file method.
+};
 
 export default function RootLayout({
   children,

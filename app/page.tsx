@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { IconBrandLinkedinFilled, IconBrandXFilled, IconBrandYoutubeFilled, IconArrowUpRight } from "@tabler/icons-react";
 import { Button } from "@/components/ui/button";
+import generateStaticMetadata from "@/lib/metadata-static";
 
 const SOCIAL_LINKS = [
   {
@@ -19,6 +20,13 @@ const SOCIAL_LINKS = [
     url: "https://www.youtube.com/@devredbox",
   },
 ]
+
+export const metadata = generateStaticMetadata({
+	title: "Armaan Chaand",
+	description:
+		"I run a dev studio that partners with founders to turn ideas into working products.",
+	pagePath: "/",
+});
 
 const PROJECTS = [
   {
